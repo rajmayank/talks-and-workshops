@@ -83,14 +83,14 @@ function buildDist({ input = 'workshops/ai-watermarking/slides/index.html', outp
   });
   if (!foundDeck || !scripts.length || !styles.length) throw new Error('Expected a WORKSHOP manifest, local scripts and local styles.');
   const css = styles.join('\n');
-  const js = `'use strict';\n${scripts.join('\n;\n')}\n`;
+  const js = `'use strict';\n${scripts.join('\n;\n').trimEnd()}\n`;
   new vm.Script(js, { filename: 'presentation bundle' });
   const cssName = add(`presentation.${digest(css).slice(0, 12)}.css`, css);
   const jsName = add(`presentation.${digest(js).slice(0, 12)}.js`, js);
   html = withoutNotebookLinks(rewriteAssets(html))
     .replace('<!-- PRESENTATION_STYLE -->', `<link rel="stylesheet" href="${cssName}">`)
     .replace('<!-- PRESENTATION_SCRIPT -->', `<script src="${jsName}"></script>`);
-  add('index.html', html);
+  add('index.html', html.replace(/[\t ]+$/gm, '').trimEnd() + '\n');
   // Assets referenced in strings inside the runtime need the same check as HTML/CSS.
   for (const [name, data] of files) {
     if (!/\.(?:html|css|js)$/.test(name)) continue;

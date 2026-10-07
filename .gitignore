@@ -1,0 +1,8 @@
+# Local research and exploratory work for every talk and workshop.
+research/
+
+# Rebuild hosting bundles from the tracked presentation sources.
+dist/
+
+# macOS metadata.
+.DS_Store

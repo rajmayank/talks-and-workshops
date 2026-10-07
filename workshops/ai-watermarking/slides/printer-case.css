@@ -1,0 +1,29 @@
+/* A source-led, three-step reveal. EFF photographs and annotations stay intact. */
+.printer-case-slide .body{margin-top:25px}
+.printer-case-layout{display:grid;grid-template-columns:640px 1fr;gap:36px;height:405px}
+.printer-case-figure{margin:0;min-width:0}
+.printer-case-images{height:370px;position:relative;overflow:hidden;background:#141b16}
+.printer-case-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transform:scale(.98);transition:opacity .55s ease,transform .8s ease;pointer-events:none}
+.printer-case-image.is-visible{opacity:1;transform:scale(1)}
+.printer-case[data-step="1"] .printer-case-image.is-visible{transform:scale(1.35)}
+.printer-case-figure figcaption{font-size:14px;line-height:1.4;color:var(--muted);margin-top:10px}
+.printer-case-explanation{display:flex;flex-direction:column;justify-content:center}
+.printer-case-heading{font-size:35px;line-height:1.14;letter-spacing:-1px;max-width:430px}
+.printer-case-copy{font-size:22px;line-height:1.4;margin-top:21px!important;max-width:405px}
+.printer-case-readout{border-top:1px solid var(--line);margin-top:18px;padding-top:17px}
+.printer-case-readout[hidden]{display:none}
+.printer-case-readout span{font-size:12px;letter-spacing:.1em;color:var(--muted);display:block;margin-bottom:7px}
+.printer-case-readout strong{font-size:40px;line-height:1;letter-spacing:-1px;font-weight:500;color:var(--signal);display:block;font-variant-numeric:tabular-nums}
+.light .printer-case-readout strong{color:#496725}
+.printer-case-readout small{display:block;font-size:13px;line-height:1.35;color:var(--muted);margin-top:8px}
+.printer-case-date{display:flex;gap:45px;margin-top:21px}
+.printer-case-date strong{font-size:25px;letter-spacing:-.5px}
+.printer-case-readout>p{font-size:15px;line-height:1.4;color:var(--muted);margin-top:19px!important;max-width:410px}
+.printer-case[data-step="2"] .printer-case-heading{font-size:29px}
+.printer-case[data-step="2"] .printer-case-copy{font-size:18px;margin-top:11px!important}
+.printer-case-controls{display:flex;gap:11px;align-items:center;margin-top:15px}
+.printer-case-controls button{font-size:17px;padding:12px 16px;border-color:#78826b}
+.printer-case-controls button[aria-pressed="true"]{background:var(--signal);border-color:var(--signal);color:var(--ink)}
+.light .printer-case-controls button[aria-pressed="true"]{background:#3a5127;border-color:#3a5127;color:#f3f5eb}
+.printer-case-controls a{font-size:15px;line-height:1.35;margin-left:auto;text-decoration-thickness:1px;max-width:250px}
+@media(prefers-reduced-motion:reduce){.printer-case-image{transition:none}}

@@ -1,0 +1,55 @@
+/* Historical artifacts remain photographs, with controls for closer inspection. */
+.baker-layout{display:grid;grid-template-columns:640px 1fr;gap:45px;align-items:center}
+.baker-layout figure{margin:0}.baker-layout img{display:block;width:640px;height:455px;object-fit:contain;background:#090b09}
+.baker-layout figcaption{font-size:14px;color:var(--muted);margin-top:12px}
+.baker-question{font-size:43px;line-height:1.17;letter-spacing:-1px}
+.baker-question .source-link{font-size:17px;line-height:1.5;margin-top:40px}
+.music-layout{display:grid;grid-template-columns:720px 1fr;gap:40px;align-items:center}
+.music-layout img{display:block;width:720px;height:480px;object-fit:contain}
+.music-layout .music-copy p{font-size:29px;line-height:1.35;margin-bottom:25px}
+.music-layout .music-copy .credit{font-size:16px!important;line-height:1.5}
+.music-layout button{font-size:16px;margin-top:16px}
+.evidence-layout{display:grid;grid-template-columns:830px 1fr;gap:35px;align-items:start}
+.evidence-window{height:433px;overflow:hidden;background:#fff;position:relative}
+.evidence-window img{width:100%;height:auto;display:block;transform-origin:top center;transition:transform .6s ease}
+.post-proof[data-view="detail"] .evidence-window img{transform:translateY(-58%)}
+.genius-proof[data-view="detail"] .evidence-window img{transform:translateY(-35%)}
+[data-evidence][data-view="full"] .evidence-window img{height:100%;object-fit:contain;transform:none}
+.evidence-controls{display:flex;gap:10px;margin-top:15px}.evidence-controls button{font-size:15px;padding:9px 13px}
+.evidence-controls button[aria-pressed="true"]{background:var(--signal);color:var(--ink);border-color:var(--signal)}
+.light .evidence-controls button[aria-pressed="true"]{background:#405d2a;color:white;border-color:#405d2a}
+.evidence-context p{font-size:27px;line-height:1.35;margin:13px 0 28px}.evidence-context .credit{font-size:16px!important;line-height:1.5!important}
+.evidence-context .source-link{font-size:17px;margin:15px 0 0;line-height:1.35}
+.evidence-viewer{max-width:95vw;width:1300px;height:90vh;padding:20px}
+.evidence-viewer .evidence-close{position:sticky;top:0;float:right;background:#162014;z-index:1}
+.evidence-full-image img{display:block;width:100%;height:auto;margin-top:55px}
+.query-figure{margin:0}.query-figure img{display:block;width:1120px;height:350px;object-fit:contain;background:white}
+.query-figure figcaption{font-size:15px;color:var(--muted);margin-top:10px}
+.query-comment{display:flex;justify-content:space-between;align-items:center;margin-top:28px;gap:25px}
+.query-comment p{font-size:28px}.query-comment .source-link{font-size:17px}
+.search-comparison{display:grid;grid-template-columns:710px 1fr;gap:44px}
+.search-pair figure{margin:0 0 15px}.search-pair figcaption{font-size:15px;margin-bottom:7px;color:var(--muted)}
+.search-pair img{display:block;width:710px;height:200px;object-fit:contain;background:#fff}
+.search-explanation p{font-size:32px;line-height:1.3;margin-top:21px}.search-explanation .dispute{font-size:22px;line-height:1.45;margin-top:31px;color:#c6cebc}
+.search-explanation .source-link{display:flex;font-size:17px;margin-top:25px;width:max-content}
+.video-screen{position:relative;background:#090b09;height:400px}
+.video-screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.denton-layout{display:grid;grid-template-columns:770px 1fr;gap:35px}
+.denton-layout .video-screen{height:410px}.denton-placeholder{height:100%;display:flex;align-items:center;justify-content:center;color:#a8aea1;font-size:28px;background:#1b201a}
+.denton-controls{display:flex;gap:9px;flex-wrap:wrap;margin-top:13px}.denton-controls button{font-size:15px;padding:9px 12px}
+.denton-sidebar .credit{font-size:17px;line-height:1.45}.denton-prompt p{font-size:30px;line-height:1.35;margin-top:37px}
+.denton-sidebar .source-link{font-size:16px;margin-top:27px}.denton-sidebar .morse-guide[hidden],.denton-sidebar .denton-prompt[hidden]{display:none}
+.morse-guide h3{font-size:40px;letter-spacing:3px;margin-top:18px}.morse-guide .morse-label{font-size:14px;color:#b5bcae;margin:11px 0 14px}
+.morse-guide table{font-size:23px;width:210px}.morse-guide td{padding:4px 0;border-bottom:1px solid #333b2c;line-height:1.1}
+.morse-guide td:last-child{font-family:ui-monospace,monospace;letter-spacing:9px}
+.denton-sidebar .morse-guide~.source-link{margin-top:19px}
+
+/* Denton: observe first, then advance to the separate decoded replay. */
+.denton-watch .body{margin-top:22px}
+.denton-first-pass{width:864px;margin:0 auto}
+.denton-first-pass .video-screen{width:864px;height:486px;box-shadow:0 0 0 1px #42483d}
+.denton-decoded .denton-layout{grid-template-columns:770px 1fr;gap:40px;align-items:center}
+.denton-decoded .video-screen{height:433px;box-shadow:0 0 0 1px #42483d}
+.denton-decoded .morse-guide h3{font-size:48px;letter-spacing:2px;margin:0 0 25px}
+.denton-decoded .morse-guide table{width:100%;font-size:29px}
+.denton-decoded .morse-guide td{padding:8px 0;line-height:1.15}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101310">
+  <title>Mark My Words. And Pixels.</title>
+  <link rel="stylesheet" href="../../../shared/presentation/deck.css">
+  <link rel="stylesheet" href="workshop.css">
+  <link rel="stylesheet" href="cases.css">
+  <link rel="stylesheet" href="printer-case.css">
+</head>
+<body>
+  <main id="stage" tabindex="-1" aria-label="Workshop presentation"></main>
+  <dialog id="commands" aria-labelledby="commands-title">
+    <button class="close" aria-label="Close presentation controls" autofocus>Close <kbd>Esc</kbd></button>
+    <h2 id="commands-title">Presentation controls</h2>
+    <p id="command-slide-title"></p>
+    <div class="command-actions">
+      <button id="previous" aria-label="Previous slide">Previous <kbd>←</kbd></button>
+      <button id="next" aria-label="Next slide">Next <kbd>→</kbd></button>
+      <button id="notes-button">Notes <kbd>N</kbd></button>
+      <button id="overview-button">Workshop map <kbd>O</kbd></button>
+      <button id="presenter-button">Presenter window</button>
+      <button id="fullscreen-button">Full screen <kbd>F</kbd></button>
+    </div>
+    <div class="command-help">
+      <p><kbd>?</kbd> or <kbd>⌘ / Ctrl + P</kbd> Controls</p>
+      <p><kbd>Space</kbd> Next slide</p>
+      <p><kbd>Home</kbd> / <kbd>End</kbd> First / last slide</p>
+      <p><kbd>B</kbd> Blank / restore screen</p>
+      <p><kbd>P</kbd> Pause / resume animation or video</p>
+      <p><kbd>M</kbd> Mute / unmute video</p>
+      <p><kbd>R</kbd> Replay video</p>
+      <p><kbd>Esc</kbd> Close a panel</p>
+    </div>
+  </dialog>
+  <dialog id="notes" aria-label="Presenter notes"><button class="close" autofocus>Close</button><div id="notes-content"></div></dialog>
+  <dialog id="overview" aria-labelledby="overview-title"><button class="close" autofocus>Close</button><h2 id="overview-title">Workshop map</h2><div id="overview-content"></div></dialog>
+  <aside id="presenter-notes" hidden></aside>
+  <div id="blackout" hidden><span>Press B to return</span></div>
+  <script src="slides.js"></script>
+  <script src="../../../shared/presentation/motion.js"></script>
+  <script src="../../../shared/presentation/video.js"></script>
+  <script src="../demos/cases.js"></script>
+  <script src="../demos/printer-case.js"></script>
+  <script src="../demos/lab.js"></script>
+  <script src="../../../shared/presentation/deck.js"></script>
+  <script src="../demos/pixel-residual.js"></script>
+</body>
+</html>

@@ -44,3 +44,12 @@ The pen clip illustrates UV-revealed writing. The newspaper clip illustrates a h
 - `printer-eff-white-light.jpg`, `printer-eff-blue-light.jpg`, `printer-eff-decoding-guide.png`: unchanged [EFF guide images](https://w2.eff.org/Privacy/printers/docucolor/), originally `faint2.jpg`, `docucolor4.jpg`, and `guide.png`. The guide’s stated sample is 21 June 2005, 12:50, serial 21052857 or 052857. The deck displays that documented interpretation rather than performing image extraction.
 
 Denton’s supplied YouTube upload is embedded and linked, not downloaded. The replay guide gives the documented message and standard Morse spelling, without a claim of frame-level alignment. Historical context is attributed to the U.S. Navy and National Archives.
+
+## Presenter introduction
+
+- `mayank-raj.webp`: published [Mayank Raj speaker portrait](https://www.opensourceindia.in/osi-speakers-2026/mayank-raj-2/), copied unchanged from the official workshop page.
+- `shreya-agrahari.webp`: published [Shreya Agrahari speaker portrait](https://www.opensourceindia.in/osi-speakers-2026/shreya-agrahari/), copied unchanged from the official workshop page.
+- `mayank-x-qr.svg`: static QR for `https://x.com/mayank9856`.
+- `sudomeet-qr.svg`: static QR for `https://sudomeet.com`.
+
+QR images use black modules on white with a four-module quiet zone and medium error correction. They are clickable in the browser deck and embedded in its portable export.

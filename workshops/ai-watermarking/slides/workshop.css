@@ -120,3 +120,21 @@
 .pixel-equation strong{font:28px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:nowrap}
 .pixel-equation>b{font-size:29px;font-weight:400;padding-top:17px;text-align:center}
 .pixel-equation [data-pixel-term="residual"]{color:var(--signal)}
+
+/* Presenter introduction: portraits alongside projector-sized QR codes. */
+.presenter-intro .body{margin-top:32px;display:flex;align-items:center;padding-bottom:18px}
+.presenter-intro-layout{display:grid;grid-template-columns:minmax(0,1fr) 524px;gap:42px;width:100%;align-items:center}
+.presenter-profiles{display:grid;gap:28px}
+.presenter-profile{display:grid;grid-template-columns:164px minmax(0,1fr);gap:25px;align-items:center;min-height:184px}
+.presenter-profile+.presenter-profile{border-top:1px solid var(--line);padding-top:26px}
+.presenter-portrait{display:block;width:164px;height:164px;border-radius:50%;object-fit:cover;background:#fff}
+.presenter-intro .presenter-bio h3{font-size:35px;line-height:1.1;letter-spacing:-1px}
+.presenter-role{font-size:20px;line-height:1.35;margin-top:13px!important;color:#d0d5c9}
+.presenter-detail{font-size:17px;line-height:1.3;margin-top:9px!important;color:var(--muted)}
+.presenter-link{display:inline-flex;gap:10px;font-size:18px;line-height:1.3;margin-top:17px;color:var(--signal);text-decoration:none;border-bottom:1px solid #c1f34a66;padding-bottom:4px}
+.presenter-qr-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.presenter-qr-card{display:flex;flex-direction:column;align-items:center;background:#fff;color:var(--ink);padding:18px 10px 20px;border-radius:10px;text-decoration:none;box-shadow:0 12px 34px #0003}
+.presenter-qr-card:hover{box-shadow:0 0 0 3px var(--signal),0 12px 34px #0003}
+.presenter-qr-label{font-size:17px;line-height:1.3;font-weight:700;margin-bottom:10px}
+.presenter-qr-card img{display:block;width:232px;height:232px;background:white;image-rendering:pixelated}
+.presenter-qr-card strong{font-size:19px;line-height:1.3;margin-top:12px;letter-spacing:-.3px}

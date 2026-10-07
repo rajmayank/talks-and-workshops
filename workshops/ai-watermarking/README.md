@@ -10,7 +10,7 @@ AI watermarking with open-source tools. Mayank Raj and Shreya Agrahari.
 - [Text Part 2: real LLM](demos/text-watermark-part-2.ipynb)
 - [Image notebook](demos/image-watermark-lab.ipynb)
 
-49 slides. Expanded cases include Josephine Baker, Jeremiah Denton, Tesla, Genius, Google/Bing, and EFF’s printer-dot work. Both text and image builds remain. The expanded plan is 210 to 225 minutes, including 60 to 75 minutes for history and use cases. A shorter selection for the published 150-minute slot is described in the facilitator guide.
+50 slides. Expanded cases include Josephine Baker, Jeremiah Denton, Tesla, Genius, Google/Bing, and EFF’s printer-dot work. Both text and image builds remain. The expanded plan is 210 to 225 minutes, including 60 to 75 minutes for history and use cases. A shorter selection for the published 150-minute slot is described in the facilitator guide.
 
 ## Present
 

@@ -1,6 +1,6 @@
 # Browser deck validation
 
-Original deck checks: 2026-10-05. Current source: 49-slide interactive HTML deck. Latest audience edits checked on 2026-10-07. Earlier slide counts and numbers below identify the build checked at that time.
+Original deck checks: 2026-10-05. Current source: 50-slide interactive HTML deck. Latest audience edits checked on 2026-10-07. Earlier slide counts and numbers below identify the build checked at that time.
 
 ## Passed
 
@@ -74,3 +74,10 @@ The user removed PDF export and its verification from the requirements. It is no
 - The packaged deck was checked through the local Cloudflare Pages preview at the final path. All 49 slides load, with no missing images or text/control overflow. Two enlarged evidence images deliberately extend inside clipped viewing windows.
 - QR layouts on slides 36, 37 and 41 were visually reviewed. All launch links point directly to Colab's GitHub loader; there are no local notebook download links in the hosted output. `?` opens the hidden controls, and Escape closes them.
 - Source materials remain Git-ignored. Production deployment is separate from the requested SudoMeet PR.
+
+## Presenter introduction
+
+- Added slide 2 introducing Mayank Raj and Shreya Agrahari with their published workshop portraits. Mayank's LinkedIn remains clickable; Shreya's LinkedIn is omitted as requested.
+- Added large static QR cards for `https://x.com/mayank9856` and `https://sudomeet.com`. Each SVG was rasterized and independently decoded at its displayed 232-pixel size with ZXing. Both payloads match exactly.
+- The packaged slide was reviewed at 1280 × 720 in the browser. All four images load and all portraits, text, links and QR cards fit the slide.
+- Rebuilt the portable export, facilitator guide and 50-slide hosting distribution. The hosting build now contains 39 generated files, with no notebook or authoring files. Updated video cue slide numbers after the insertion.

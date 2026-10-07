@@ -8,8 +8,25 @@ window.WORKSHOP = {
       "className": "cover",
       "eyebrow": "",
       "html": "<img class=\"cover-art\" src=\"../assets/paper-signal.png\" alt=\"Sculptural paper illuminated by green light\"><div class=\"cover-copy\"><h1>Mark My<br>Words.<br><span class=\"accent\">And Pixels.</span></h1><p class=\"subtitle\">AI watermarking with open-source tools</p><p class=\"presenters\">Mayank Raj &nbsp; / &nbsp; Shreya Agrahari</p><p class=\"cover-date\">08 October 2026 · Bengaluru</p></div>",
-      "notes": "Open with the brief AI disclaimer and agenda, then the childhood invisible-ink question. We’re going to hide information in a memo, in generated text, and in an image. Then we’ll make changes and see what survives. Shreya and I will switch between the examples and the notebooks. The expanded preparation plan is 210 to 225 minutes, with 60 to 75 minutes for history and use cases. The user approved extending this section; the published slot remains 150 minutes. The cover image is conceptual artwork.",
+      "notes": "Introduce both presenters, then the brief AI disclaimer and agenda, then the childhood invisible-ink question. We’re going to hide information in a memo, in generated text, and in an image. Then we’ll make changes and see what survives. Shreya and I will switch between the examples and the notebooks. The expanded preparation plan is 210 to 225 minutes, with 60 to 75 minutes for history and use cases. The user approved extending this section; the published slot remains 150 minutes. The cover image is conceptual artwork.",
       "section": "Mark My Words. And Pixels."
+    },
+    {
+      "title": "Hey, we’re Mayank and Shreya.",
+      "eyebrow": "Before we start",
+      "className": "presenter-intro",
+      "body": "<div class=\"presenter-intro-layout\"><div class=\"presenter-profiles\"><article class=\"presenter-profile\"><img class=\"presenter-portrait\" src=\"../assets/mayank-raj.webp\" alt=\"Mayank Raj\"><div class=\"presenter-bio\"><h3>Mayank Raj</h3><p class=\"presenter-role\">Staff Engineer, Infrastructure<br>Stripe</p><p class=\"presenter-detail\">OpenAI Codex Ambassador</p><a class=\"presenter-link\" href=\"https://www.linkedin.com/in/mayank9856/\" target=\"_blank\" rel=\"noopener\">LinkedIn <span aria-hidden=\"true\">↗</span></a></div></article><article class=\"presenter-profile\"><img class=\"presenter-portrait\" src=\"../assets/shreya-agrahari.webp\" alt=\"Shreya Agrahari\"><div class=\"presenter-bio\"><h3>Shreya Agrahari</h3><p class=\"presenter-role\">Analyst · Accenture</p><p class=\"presenter-detail\">AI &amp; agentic development</p></div></article></div><div class=\"presenter-qr-grid\"><a class=\"presenter-qr-card\" href=\"https://x.com/mayank9856\" target=\"_blank\" rel=\"noopener\" aria-label=\"Scan or open Mayank Raj on X\"><span class=\"presenter-qr-label\">Find me on X</span><img src=\"../assets/mayank-x-qr.svg\" alt=\"QR code for Mayank Raj’s X profile\"><strong>@mayank9856 <span aria-hidden=\"true\">↗</span></strong></a><a class=\"presenter-qr-card\" href=\"https://sudomeet.com\" target=\"_blank\" rel=\"noopener\" aria-label=\"Scan or open SudoMeet\"><span class=\"presenter-qr-label\">I also run</span><img src=\"../assets/sudomeet-qr.svg\" alt=\"QR code for SudoMeet\"><strong>SudoMeet.com <span aria-hidden=\"true\">↗</span></strong></a></div></div>",
+      "notes": "Introduce both of us briefly. Mayank is a Staff Engineer in Infrastructure at Stripe and an OpenAI Codex Ambassador. Shreya works as an Analyst at Accenture and focuses on making AI and agentic development accessible. Give the room a moment to scan the X and SudoMeet QR codes. The X code opens @mayank9856; the SudoMeet code opens sudomeet.com. Mayank’s LinkedIn link is clickable. Shreya’s LinkedIn was omitted at Mayank’s request. Portraits are the published workshop speaker photographs.",
+      "sources": [
+        {
+          "label": "Mayank Raj · official workshop speaker profile",
+          "url": "https://www.opensourceindia.in/osi-speakers-2026/mayank-raj-2/"
+        },
+        {
+          "label": "Shreya Agrahari · official workshop speaker profile",
+          "url": "https://www.opensourceindia.in/osi-speakers-2026/shreya-agrahari/"
+        }
+      ]
     },
     {
       "title": "Disclaimer",

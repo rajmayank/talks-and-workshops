@@ -17,6 +17,8 @@ Start with the beginner text notebook, then continue to Part 2 for a real LLM. T
 
 The beginner text notebook uses Python's built-in tools. Images use Pillow. Neither needs model downloads or widgets. If Pillow is missing, the image notebook explains how to install it.
 
+Part 2 checks its dependency versions before loading the model. If the installer requests a session restart, restart and run from the top; it will reuse the installed packages. The text lab removes optional vision/audio packages to avoid incompatible imports and uses official PyTorch CPU wheels on Colab. A missing `HF_TOKEN` warning can be ignored for its public model.
+
 Part 2 uses PyTorch, Transformers and a small language model. The first run downloads about 0.7 GB of model weights. Only its final paste-and-check box uses widgets; a plain code-cell alternative is included. All three notebooks use CPU and require no paid API key.
 
 ## Teach it slowly

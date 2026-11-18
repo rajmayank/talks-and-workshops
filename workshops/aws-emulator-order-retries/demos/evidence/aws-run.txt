@@ -1,0 +1,14 @@
+Target: aws; account=[omitted]
+Creating disposable resources: order-lab-031693f5a6bf
+PASS naive crash: stock=10 -> 8 -> 6; reserved
+Creating disposable resources: order-lab-52fb6da9e293
+PASS atomic crash: stock=10 -> 8 -> 8; duplicate
+Creating disposable resources: order-lab-f49084f8446b
+PASS duplicate sends: different message IDs; stock=8
+Creating disposable resources: order-lab-30fc6a1e4e72
+PASS concurrent workers: one reservation; stock=8
+Creating disposable resources: order-lab-ccc5e92accba
+PASS insufficient stock: unchanged stock; DLQ
+Creating disposable resources: order-lab-07d7e2466835
+PASS payload conflict: unchanged stock; DLQ
+6 scenario(s) passed. Demo resources deleted.

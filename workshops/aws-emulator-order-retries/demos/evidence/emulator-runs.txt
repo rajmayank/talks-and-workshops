@@ -1,0 +1,29 @@
+Version: 1.0.509
+Release date: 2026.11.18
+Commit: 8ae1f15e1239e20a3ab2eb37bf44813feb1807c7
+Target: emulator; account=000000000000
+PASS naive crash: stock=10 -> 8 -> 6; reserved
+1 scenario(s) passed. Demo resources deleted.
+
+Version: 1.0.509
+Release date: 2026.11.18
+Commit: 8ae1f15e1239e20a3ab2eb37bf44813feb1807c7
+Target: emulator; account=000000000000
+PASS atomic crash: stock=10 -> 8 -> 8; duplicate
+1 scenario(s) passed. Demo resources deleted.
+
+Version: 1.0.509
+Release date: 2026.11.18
+Commit: 8ae1f15e1239e20a3ab2eb37bf44813feb1807c7
+Target: emulator; account=000000000000
+PASS duplicate sends: different message IDs; stock=8
+PASS concurrent workers: one reservation; stock=8
+2 scenario(s) passed. Demo resources deleted.
+
+Version: 1.0.509
+Release date: 2026.11.18
+Commit: 8ae1f15e1239e20a3ab2eb37bf44813feb1807c7
+Target: emulator; account=000000000000
+PASS insufficient stock: unchanged stock; DLQ
+PASS payload conflict: unchanged stock; DLQ
+2 scenario(s) passed. Demo resources deleted.

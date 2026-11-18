@@ -53,7 +53,7 @@ if [[ "$status" != DELETE_COMPLETE && "$status" != DELETE_IN_PROGRESS ]]; then
   while true; do
     versions=$(aws s3api list-object-versions --bucket "$bucket" --expected-bucket-owner "$account" \
       --max-keys 1000 --no-paginate --output json)
-    jq '{Objects: [(.Versions[]?, .DeleteMarkers[]?) | {Key, VersionId}], Quiet: true}' \
+    jq '{Objects: [(.Versions[]?, .DeleteMarkers[]?) | {Key, VersionId}]}' \
       <<< "$versions" > "$state/versions.json"
     if jq -e '.Objects | length == 0' "$state/versions.json" >/dev/null; then break; fi
     aws s3api delete-objects --bucket "$bucket" --expected-bucket-owner "$account" \

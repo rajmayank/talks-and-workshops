@@ -26,6 +26,7 @@ Use the same session layout under `talks/<talk-slug>/` or
 
 - [AI watermarking](workshops/ai-watermarking/README.md)
 - [Order retries with AWS Emulator](workshops/aws-emulator-order-retries/README.md)
+- [Streaming and throttling with Lambda Web Functions](workshops/lambda-web-functions-streaming/README.md)
 
 ## Local research
 

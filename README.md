@@ -22,9 +22,10 @@ workshops/
 Use the same session layout under `talks/<talk-slug>/` or
 `workshops/<workshop-slug>/`. Use lowercase names with hyphens.
 
-## Current workshop
+## Workshops
 
 - [AI watermarking](workshops/ai-watermarking/README.md)
+- [Order retries with AWS Emulator](workshops/aws-emulator-order-retries/README.md)
 
 ## Local research
 

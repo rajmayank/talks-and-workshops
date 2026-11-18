@@ -1,0 +1,2 @@
+Cleanup verified in us-east-1: 12 tables absent; 12 queues absent.
+Checked exact names from the run log. No resources deleted by this checker.
